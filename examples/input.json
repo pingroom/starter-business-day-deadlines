@@ -1,0 +1,55 @@
+{
+  "batchId": "paper-orders",
+  "title": "Paper order lead times",
+  "calendars": [
+    {
+      "id": "normal",
+      "label": "Standard workweek",
+      "reference": "Desk calendar v1",
+      "from": "2026-11-01",
+      "through": "2026-11-30",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exceptions": [
+        {
+          "date": "2026-11-16",
+          "open": false
+        }
+      ]
+    },
+    {
+      "id": "short",
+      "label": "Short trial calendar",
+      "reference": "Trial ends Nov 17",
+      "from": "2026-11-01",
+      "through": "2026-11-17",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exceptions": []
+    }
+  ],
+  "requests": [
+    {
+      "id": "a",
+      "context": "Notebook paper order",
+      "start": "2026-11-13",
+      "workingDays": 3
+    },
+    {
+      "id": "b",
+      "context": "Envelope paper order",
+      "start": "2026-11-13",
+      "workingDays": 2
+    }
+  ]
+}
